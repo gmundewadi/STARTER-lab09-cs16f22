@@ -2,7 +2,7 @@
 
 // Python headers must be included before any system headers, since
 // they define _POSIX_C_SOURCE
-#include <Python.h>
+#include <python3.10/Python.h>
 
 #include <vector>
 #include <map>
