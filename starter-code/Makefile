@@ -7,7 +7,7 @@ CXXFLAGS= -Wall -Wno-uninitialized -DWITHOUT_NUMPY -I/usr/local/include/python3.
 OBJECTFILES = dataManipulationFuncs.o graphingTool.o
 TARGET = graphingTool
 
-graphs: ${TARGET}
+all: ${TARGET}
 
 ${TARGET}: ${OBJECTFILES}
 	$(CXX) ${CXXFLAGS} -o ${TARGET} ${OBJECTFILES} 
