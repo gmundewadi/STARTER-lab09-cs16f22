@@ -45,19 +45,63 @@ If you need help with these steps:
 Once you've populated your repo, typing the `ls` command should show you the following files in your current directory
 
 ```
-insert ls result
+% ls
+2008CompilationData.csv		dataManipulationFuncs.h
+Makefile			graphingTool.cpp
+dataManipulationFuncs.cpp	matplotlibcpp.h
 ```
 
 ## Step 3: Implement the functions
 
-### Step 3a: CSV Parsing
+### Assignment Background
+This programming assignment investigates oceanic carbon and oxygen isotope ratios over time. These ratios are important since they can help us identify moments of significant temperature change. For example:
+-  $\delta$<sup>18</sup>O: oxygen-18 / oxygen-16
+-  $\delta$<sup>13</sup>C: carbon-13 / carbon-12
 
-### Step 3b: Plotting
+Larger values for $\delta$<sup>18</sup>O indicate lower temperatures
 
-### Step 3c: Filtering
+Smaller values for $\delta$<sup>13</sup>C indicate higher temperatures. 
 
-### Step 3d: Smoothing
+For more detailed information regarding this assignment, feel free to visit: http://www.discoveringcs.net/7_data_analysis/project7.1.pdf
+
+
+### Step 3a: CSV Parsing (Required)
+You will find that all the data is given in csv (comma separated values) format, in three main data types. 
+
+- First Column: time (Ma - Millions of Years Ago)
+- Second Column: $\delta$<sup>18</sup>O
+- Third Column: $\delta$<sup>13</sup>C
+
+###### Your Task
+
+When working with large amounts of data, it is often useful to store it in a data structure such as a vector. 
+
+In ```dataManipulationFuncs.cpp``` there is a function with the declaration:
+``` vector<vector<double>> parseData(const string pathToFile, size_t numCol); ```
+
+Your job is to implement this function by parsing the csv data into a ```vector<vector<double>>```
+
+It takes in two arguments:
+- ```const string pathToFile```: the relative file location of the csv data.
+- ```size_t numCol```: The number of columns stored by the data. 
+
+It outputs:
+- ```vector<vector<double>>```: This structure which is returned should be a vector of all the columns, where each column is also represented as a vector. 
+
+Notice there are some data entries that are missing for some rows. When parsing the data, if a row is missing data from any column, do not include it in the final data structure. 
+
+Finally, your function should also check for errors with the file opening process. 
+
+### Step 3b: Plotting (Extra Credit)
+
+
+
+### Step 3c: Filtering (Extra Credit)
+
+### Step 3d: Smoothing (Extra Credit)
 
 ## Acknowledgements
 
-This programming assignment is based off an exercise from "Discovering Computer Science: Second Edition". 
+This programming assignment is based off an exercise from "Discovering Computer Science: Second Edition".
+
+- http://www.discoveringcs.net/7_data_analysis/project7.1.pdf
