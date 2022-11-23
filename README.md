@@ -141,7 +141,7 @@ Varying results in the data may result in abrupt spikes or dips. Sometimes we wa
 
 One good way to smooth out the curve is to make each data point an average of those around it given a certain "window" length. "Window" in this case means a sequential grouping of data points within a certain length. 
 
-For example, suppose we have a vector of 10 numbers: ```4 2 54 1 23```. And we will be looking for the smoothed data with window length of 3.
+For example, suppose we have a vector of 5 numbers: ```4 2 54 1 23```. And we will be looking for the smoothed data with window length of 3.
 
 First, we place the window starting at index 0, ```4 2 54``` will be inside the window. We can calculate the moving average for index 0 is (4 + 2 + 54)/3 = 20
 
