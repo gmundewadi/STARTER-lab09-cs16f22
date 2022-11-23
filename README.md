@@ -139,7 +139,15 @@ Your job in this step is to implement ```filterData```.
 
 Varying results in the data may result in abrupt spikes or dips. Sometimes we want to find general trends in the data by "smoothing" out the curve. 
 
-One good way to smooth out the curve is to make each data point an average of those around it given a certain "window" length. "Window" in this case means a sequential grouping of data points within a certain length. For example, suppose we have a vector of 10 numbers: ```4 2 54 1 23 4 0 9 7 89```. A valid window of size three might be: ```1 23 4```. Notice how these numbers are "neighbors" in the data. 
+One good way to smooth out the curve is to make each data point an average of those around it given a certain "window" length. "Window" in this case means a sequential grouping of data points within a certain length. 
+
+For example, suppose we have a vector of 10 numbers: ```4 2 54 1 23```. And we will be looking for the smoothed data with window length of 3.
+
+First, we place the window starting at index 0, ```4 2 54``` will be inside the window. We can calculate the moving average for index 0 is (4 + 2 + 54)/3 = 20
+
+Secondly, we move the window one unit to the right. ```2 54 1``` will be inside the window. The moving average for index 1 is (2 + 54 + 1)/3 = 19.
+
+By doing the previous step recursively, we can finally get our smoothed vector: ```20 19 26 12 23```.
 
 In ```dataManipulationFuncs.cppp``` there is a function with the declaration:
 
