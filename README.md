@@ -8,9 +8,9 @@ assigned: 2022-11-28 13:00
 due: 2022-12-05 14:00
 ---
 
-# Goals for this lab
+# Goals for this programming assignment
 
-The goal of this lab is practice *insert learning goals*.  
+The goal of this programming assignment is to practice reading and storing data from input files. There are other extra credit opportunities for this particular assignment, which involve plotting using matplotlibcpp, and some other algorithmic operations such as filtering and smoothing. The only required portion of this programming assignment is reading and storing the data. 
 
 We request that you DO NOT ask the staff to debug your code for you. They have been specifically instructed not to debug *for* you, but rather to *guide you* through the process of debugging your code yourselves.
 
@@ -28,9 +28,7 @@ We request that you DO NOT ask the staff to debug your code for you. They have b
 
 The starter code is in this repo:
 
-* <insert starter code link here>
-
-The URL for cloning this repo is this: `git@github.com:{{site.github_org}}/STARTER-{{page.num}}.git`
+* *insert starter code link here*
 
 Previous labs contain instruction for the process of:
 * Adding a `starter` remote for this repo
@@ -74,7 +72,7 @@ You will find that all the data is given in csv (comma separated values) format,
 - Second Column: $\delta$<sup>18</sup>O
 - Third Column: $\delta$<sup>13</sup>C
 
-###### Your Task
+Your Task:
 
 When working with large amounts of data, it is often useful to store it in a data structure such as a vector. 
 
