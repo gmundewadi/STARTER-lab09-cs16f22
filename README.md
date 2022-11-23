@@ -66,6 +66,8 @@ For more detailed information regarding this assignment, feel free to visit: htt
 
 
 ### Step 3a: CSV Parsing (Required)
+
+*Step 3a is required for full credit on this programming assignment. All other steps are optional and will count as extra credit.*
 You will find that all the data is given in csv (comma separated values) format, in three main data types. 
 
 - First Column: time (Ma - Millions of Years Ago)
@@ -94,11 +96,64 @@ Finally, your function should also check for errors with the file opening proces
 
 ### Step 3b: Plotting (Extra Credit)
 
+This step involves getting experience with matplotlib for c++, which is a useful library to produce plots of data. 
 
+Inside ```graphingTool.cpp``` you will find a function with the following declaration:
+```void scatterPlot(
+    const vector<double>& x, 
+    const vector<double>& y, 
+    const string xlabel, 
+    const string ylabel, 
+    const string title, 
+    const string color);
+```
+
+Your job is to implement this function to correctly produce a scatter plot using any arguments that may be passed in. Here is a more detailed explanation of each parameter:
+- const vector<double>& x: data point values for a independent variable.
+- const vector<double>& y: data point values for a dependent variable.
+- const string xlabel: label for the x-axis.
+- const string ylabel: label for the y-axis.
+- const string title: title for the given plot.
+- const string color: color of each point on the scatter plot. (i.e. "blue" or "red")
+
+Your implementation should save the resultant image into a folder called "graphs" in the format: {title}.png
+
+For more information on using the matplotlibcpp library, reference the following documentation: https://matplotlib-cpp.readthedocs.io/en/latest/docs.html#plot-commands
 
 ### Step 3c: Filtering (Extra Credit)
 
+In the real world, sometimes we only care about specific data points with specific qualities.
+For example, in the case of this programming assignment, perhaps we would only like to analyze $\delta$<sup>18</sup>O and $\delta$<sup>13</sup>C in a given time period. 
+
+In ```dataManipulationFuncs.cpp``` there is a function with the following declaration:
+
+```
+vector<vector<double>> filterData(vector<vector<double>>& rawData, int minAge, int maxAge);
+```
+
+```filterData``` should take in the data stored from the parsed csv and return a new ```vector<vector<double>>``` with data points that lie between minAge (inclusive) and maxAge (inclusive). Your implementation should not alter the original data in any way, but should instead return a brand new structure. 
+
+Your job in this step is to implement ```filterData```. 
+
 ### Step 3d: Smoothing (Extra Credit)
+
+Varying results in the data may result in abrupt spikes or dips. Sometimes we want to find general trends in the data by "smoothing" out the curve. 
+
+One good way to smooth out the curve is to make each data point an average of those around it given a certain "window" length. "Window" in this case means a sequential grouping of data points within a certain length. For example, suppose we have a vector of 10 numbers: ```4 2 54 1 23 4 0 9 7 89```. A valid window of size three might be: ```1 23 4```. Notice how these numbers are "neighbors" in the data. 
+
+In ```dataManipulationFuncs.cppp``` there is a function with the declaration:
+
+```
+vector<vector<double>> smoothData(vector<vector<double>>& rawData, size_t windowSize);
+```
+
+You will also notice a helper function in the same file called ```getAvgNextValues```. This function should be called in smoothData to find the values of the new data points. Note, just like in ```filterData```, you should *not* alter the data in the original argument, but instead create and populate a new vector structure. 
+
+## Finishing the Assignment
+
+Now that you've finished the other steps (at least step 3a), you should locate the main function within ```graphingTool.cpp``` and test out your functions!
+
+```insert submission guidelines here```
 
 ## Acknowledgements
 
