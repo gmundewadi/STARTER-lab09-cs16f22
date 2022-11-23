@@ -151,9 +151,8 @@ You will also notice a helper function in the same file called ```getAvgNextValu
 
 ## Finishing the Assignment
 
-Now that you've finished the other steps (at least step 3a), you should locate the main function within ```graphingTool.cpp``` and test out your functions!
+Now that you've finished the other steps (at least step 3a), you should locate the main function within ```graphingTool.cpp``` and test out your functions! When you feel like you are ready, submit the assignment to gradescope. 
 
-```insert submission guidelines here```
 
 ## Acknowledgements
 
