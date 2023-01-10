@@ -35,7 +35,7 @@ void scatterPlot(
     plt::title(title);
 
     /* Save the image as {title}.png */
-    plt::save("./graphs/" + title + ".png");
+    plt::save("./" + title + ".png");
 }
 
 /* 
