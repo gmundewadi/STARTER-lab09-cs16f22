@@ -72,7 +72,6 @@ For more detailed information regarding this assignment, feel free to visit: htt
 
 ### Step 3a: CSV Parsing
 
-*Step 3a is required for full credit on this programming assignment. All other steps are optional and will count as extra credit.*
 You will find that all the data is given in csv (comma separated values) format, in three main data types. 
 
 - First Column: time (Ma - Millions of Years Ago)
