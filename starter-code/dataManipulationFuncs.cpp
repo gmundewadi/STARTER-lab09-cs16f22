@@ -20,6 +20,13 @@ vector<vector<double>> parseData(const string pathToFile, size_t numCol) {
     for(size_t i = 0; i < numCol; i++){
         result.push_back(vector<double>{});
     }
+
+    ifstream ifs(pathToFile);
+    if(ifs.fail()){ 
+        cerr << "Could not open file " + pathToFile << endl;
+        exit(2);
+    }
+    
     /* TODO: STUB */
     return result;
 }

@@ -34,7 +34,27 @@ void scatterPlot(
 
 
 int main() {
-   /*TODO: STUB*/
+   
+    // /* Deliverable 1 */
+    // vector<vector<double>> data = parseData("./2008CompilationData.csv", NUM_COLUMNS);
+    
+    // /* Deliverable 2 */
+    // scatterPlot(data[0], data[1], "Age (ma)", "d18O", "d18O vs Age (ma)", "blue");
+    // scatterPlot(data[0], data[2], "Age (ma)", "d13C", "d13C vs Age (ma)", "red");
+
+    // /* Deliverable 3 */
+    // vector<vector<double>> smoothedData = smoothData(data, WINDOW_SIZE);
+
+    // /* Deliverable 4 */
+    // scatterPlot(smoothedData[0], smoothedData[1], "Age (ma)", "d18O", "d18O Smoothed vs Age (ma)", "blue");
+    // scatterPlot(smoothedData[0], smoothedData[2], "Age (ma)", "d13C", "d13C Smoothed vs Age (ma)", "red");
+
+    // /* Deliverable 5 */
+    // vector<vector<double>> filteredData = filterData(data, MIN_AGE, MAX_AGE);
+
+    // /* Deliverable 6 */
+    // scatterPlot(filteredData[0], filteredData[1], "Age (ma)", "d18O", "d18O Filtered vs Age (ma)", "blue");
+    // scatterPlot(filteredData[0], filteredData[2], "Age (ma)", "d13C", "d13C Filtered vs Age (ma)", "red");
    return 0;   
 }
 
