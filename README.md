@@ -70,7 +70,7 @@ Smaller values for $\delta$<sup>13</sup>C indicate higher temperatures.
 For more detailed information regarding this assignment, feel free to visit: http://www.discoveringcs.net/7_data_analysis/project7.1.pdf
 
 
-### Step 3a: CSV Parsing (Required)
+### Step 3a: CSV Parsing
 
 *Step 3a is required for full credit on this programming assignment. All other steps are optional and will count as extra credit.*
 You will find that all the data is given in csv (comma separated values) format, in three main data types. 
@@ -99,7 +99,7 @@ Notice there are some data entries that are missing for some rows. When parsing 
 
 Finally, your function should also check for errors with the file opening process. 
 
-### Step 3b: Plotting (Extra Credit)
+### Step 3b: Plotting
 
 This step involves getting experience with matplotlib for c++, which is a useful library to produce plots of data. 
 
@@ -125,7 +125,7 @@ Your implementation should save the resultant image into a folder called "graphs
 
 For more information on using the matplotlibcpp library, reference the following documentation: https://matplotlib-cpp.readthedocs.io/en/latest/docs.html#plot-commands
 
-### Step 3c: Filtering (Extra Credit)
+### Step 3c: Filtering
 
 In the real world, sometimes we only care about specific data points with specific qualities.
 For example, in the case of this programming assignment, perhaps we would only like to analyze $\delta$<sup>18</sup>O and $\delta$<sup>13</sup>C in a given time period. 
@@ -140,7 +140,7 @@ vector<vector<double>> filterData(vector<vector<double>>& rawData, int minAge, i
 
 Your job in this step is to implement ```filterData```. 
 
-### Step 3d: Smoothing (Extra Credit)
+### Step 3d: Smoothing
 
 Varying results in the data may result in abrupt spikes or dips. Sometimes we want to find general trends in the data by "smoothing" out the curve. 
 
@@ -165,6 +165,23 @@ You will also notice a helper function in the same file called ```getAvgNextValu
 ## Finishing the Assignment
 
 Now that you've finished the other steps (at least step 3a), you should locate the main function within ```graphingTool.cpp``` and test out your functions! When you feel like you are ready, submit the assignment to gradescope. 
+    
+## An important word about academic honesty and the gradescope system
+
+We will test your code against other data files too&mdash;not just these.  So while you might be able to pass the tests on gradescope now by just doing a hard-coded "cout" of the expected output, that will NOT receive credit.    
+
+To be very clear, code like this will pass on gradescope, BUT REPRESENTS A FORM OF ACADEMIC DISHONESTY since it is an attempt to just "game the system", i.e. to get the tests to pass without really solving the problem.
+
+I would hope this would be obvious, but I have to say it so that there is no ambiguity: hard coding your output is a form of cheating, i.e. a form of "academic dishonesty".  Submitting a program of this kind would be subject not only to a reduced grade, but to possible disciplinary penalties. If there is <em>any</em> doubt about this fact, please ask your TA and/or your instructor for clarification.
+
+## Logging out
+
+If you are logged in remotely, you can log out using the exit command:
+
+```
+$ exit
+```
+
 
 
 ## Acknowledgements
