@@ -1,14 +1,22 @@
-
 ---
 layout: lab
-num: pa01
+num: lab02
 ready: true
-desc: "Fun with Data and Plots"
-assigned: 2022-11-28 13:00
-due: 2022-12-05 14:00
+desc: "Getting started"
+assigned: 2023-1-26 9:00:00.00-8
+due: 2023-02-02 23:59:00.00-8
 ---
 
-# Goals for this programming assignment
+# Collaboration policy 
+* This lab must be completed individually
+
+
+# Academic Honesty 
+* All work submitted for this lab should be your own. Do not use code posted on the internet. If you are using any hints from a previous offering of this course that was posted publicly by a CS24 instructor, you must cite your source.
+
+* You must use the starter code provided for the lab on the release date 2023-01-26. Do not use ANY code from previous offerings of this code. Similarity with old versions of this assignment, including can be used as the basis for academic dishonesty.
+
+# Goals of this lab
 
 The goal of this programming assignment is to practice reading and storing data from input files. There are other extra credit opportunities for this particular assignment, which involve plotting using matplotlibcpp, and some other algorithmic operations such as filtering and smoothing. The only required portion of this programming assignment is reading and storing the data. 
 
@@ -20,8 +28,8 @@ We request that you DO NOT ask the staff to debug your code for you. They have b
 
 1. Go to github and find a repo for this lab assigned to your GitHub id.
 2. Log on to your CSIL account.
-3. Change into your `~/cs16` directory
-4. Clone your empty lab09 repo into your `~/cs16` directory.
+3. Change into your `~/cs24` directory
+4. Clone your empty lab02 repo into your `~/cs24` directory.
 5. In your empty repo, do `git checkout -b main` to establish that you are on the `main` branch as your default branch.
 
 ## Step 2: Obtain the starter code
@@ -44,9 +52,8 @@ Once you've populated your repo, typing the `ls` command should show you the fol
 
 ```
 % ls
-2008CompilationData.csv		dataManipulationFuncs.h
-Makefile			graphingTool.cpp
-dataManipulationFuncs.cpp	matplotlibcpp.h
+2008CompilationData.csv    dataManipulationFuncs.h  graphs    matplotlibcpp.h
+dataManipulationFuncs.cpp  graphingTool.cpp         Makefile
 ```
 
 ## Step 3: Implement the functions
