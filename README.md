@@ -18,7 +18,7 @@ due: 2023-02-02 23:59:00.00-8
 
 # Goals of this lab
 
-The goal of this programming assignment is to practice reading and storing data from input files. There are other extra credit opportunities for this particular assignment, which involve plotting using matplotlibcpp, and some other algorithmic operations such as filtering and smoothing. The only required portion of this programming assignment is reading and storing the data. 
+The goal of this programming assignment is to practice reading and storing data from input files. You are required to parse the data from a csv file, filter the data, smooth the data and plot the data.
 
 We request that you DO NOT ask the staff to debug your code for you. They have been specifically instructed not to debug *for* you, but rather to *guide you* through the process of debugging your code yourselves.
 
@@ -122,8 +122,8 @@ Your job is to implement this function to correctly produce a scatter plot using
 - const string color: color of each point on the scatter plot. (i.e. "blue" or "red")
 
 Your implementation should save the resultant image into the CURRENT directory in the format: {title}.png
-
-For more information on using the matplotlibcpp library, reference the following documentation: https://matplotlib-cpp.readthedocs.io/en/latest/docs.html#plot-commands
+    
+matplotlib-cpp ref: https://github.com/lava/matplotlib-cpp
 
 ### Step 3c: Filtering
 
@@ -161,10 +161,50 @@ vector<vector<double>> smoothData(vector<vector<double>>& rawData, size_t window
 ```
 
 You will also notice a helper function in the same file called ```getAvgNextValues```. This function should be called in smoothData to find the values of the new data points. Note, just like in ```filterData```, you should *not* alter the data in the original argument, but instead create and populate a new vector structure. 
+    
+## Step 4: Checking your work before submitting
+    
+When you are finished, you should be able to type ```make``` and then there will be 6 images generated under your current directory. You can verify your functions by comparing the images.
 
-## Finishing the Assignment
+### 1. d18O vs Age (ma)
 
-Now that you've finished the other steps (at least step 3a), you should locate the main function within ```graphingTool.cpp``` and test out your functions! When you feel like you are ready, submit the assignment to gradescope. 
+![d18O vs Age (ma)](https://user-images.githubusercontent.com/72473351/211673249-8fc13597-5170-4196-9a40-f2000db6de0d.png)
+
+### 2. d13C vs Age (ma)
+    
+![d13C vs Age (ma)](https://user-images.githubusercontent.com/72473351/211673357-4eadc780-77c1-4ac6-8532-6de7fabdd38a.png)
+
+### 3. d18O Smoothed vs Age (ma)
+![d18O Smoothed vs Age (ma)](https://user-images.githubusercontent.com/72473351/211673561-4e14c653-159e-48c2-8e84-8986e7c03254.png)
+    
+
+### 4. d13C Smoothed vs Age (ma)
+![d18O Smoothed vs Age (ma)](https://user-images.githubusercontent.com/72473351/211673584-53473030-cea2-4c3b-b6af-6b20c981f533.png)
+
+### 5. d18O Filtered vs Age (ma)
+![d18O Filtered vs Age (ma)](https://user-images.githubusercontent.com/72473351/211673609-fea8419e-eb98-4f19-ad09-b8819b88f466.png)
+
+### 6. d13C Filtered vs Age (ma)
+    
+![d13C Filtered vs Age (ma)](https://user-images.githubusercontent.com/72473351/211673621-7cbe2c19-9f9c-4269-9976-0f32c0f25002.png)
+
+    
+Please note that we will not grade your image. The images are only for you to verify your solutions.
+
+## Step 5: Turn in your code on Gradescope
+
+Submit all the .cpp and .h files to Lab02 assignment on Gradescope via your github repo. Then visit Gradescope and check that you have a correct score.
+
+* You must check that you have followed these style guidelines:
+
+1. Indentation is neat, consistent and follows good practice (see below)
+2. Variable name choice: variables should have sensible names.
+	More on indentation: Your code should be indented neatly. Code that is inside braces should be indented, and code that is at the same "level" of nesting inside braces should be indented in a consistent way. Follow the examples from lecture, the sample code, and from the textbook.   
+3. Practice the DRY (Don't Repeat Yourself) principle. Once you have finished implementing your code, try to find areas that are repetitive or redundant and spend some time to optimize. 
+
+Commit and push the latest version of your code on github.
+
+**Graders will check your code to make sure it follows the coding style guidelines. Egregious violations to the coding style guidelines may be subject a score reduction for your lab grade.** If you are unsure whether your code exhibits good coding style, please ask a member of the course staff during lab.  
     
 ## An important word about academic honesty and the gradescope system
 
