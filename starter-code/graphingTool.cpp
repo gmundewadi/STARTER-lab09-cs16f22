@@ -24,6 +24,10 @@ void scatterPlot(
     const string color) {    
     
     /* Plot line from given x and y data and set the color. */
+    /* 
+    Hint: You can use a scatter function to create a scatter plot here. Keywords variable is a map that stores the styles of the plot.
+    Ref: https://github.com/lava/matplotlib-cpp/blob/master/matplotlibcpp.h#L993
+    */
 
     /* set x and y labels */
 
