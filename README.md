@@ -52,7 +52,7 @@ Once you've populated your repo, typing the `ls` command should show you the fol
 
 ```
 % ls
-2008CompilationData.csv    dataManipulationFuncs.h  graphs    matplotlibcpp.h
+2008CompilationData.csv    dataManipulationFuncs.h  matplotlibcpp.h
 dataManipulationFuncs.cpp  graphingTool.cpp         Makefile
 ```
 
@@ -121,7 +121,7 @@ Your job is to implement this function to correctly produce a scatter plot using
 - const string title: title for the given plot.
 - const string color: color of each point on the scatter plot. (i.e. "blue" or "red")
 
-Your implementation should save the resultant image into a folder called "graphs" in the format: {title}.png
+Your implementation should save the resultant image into the CURRENT directory in the format: {title}.png
 
 For more information on using the matplotlibcpp library, reference the following documentation: https://matplotlib-cpp.readthedocs.io/en/latest/docs.html#plot-commands
 
