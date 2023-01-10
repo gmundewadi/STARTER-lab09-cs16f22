@@ -27,29 +27,50 @@ vector<vector<double>> parseData(const string pathToFile, size_t numCol) {
         exit(2);
     }
 
+    // string line;
+    // getline(ifs,line);
+    // while (!ifs.eof()) {  
+    //     /* Parse each line into (double, double, double) where digits = [Age(ma), rO, rC] */
+    //     string digit;
+    //     vector<double> digits;    
+    //     istringstream ss(line);
+    //     while (getline(ss, digit, ',')) {
+    //         if(digit != ""){
+    //             digits.push_back(stod(digit));
+    //         } 
+    //     }
+
+    //     /* If no NULL data, apped data to result */
+    //     if(digits.size() == numCol){ 
+    //         for(size_t cIndex = 0; cIndex < numCol; cIndex++){ 
+    //             result[cIndex].push_back(digits[cIndex]);
+    //         }
+    //     } 
+    //     getline(ifs,line);
+    // }    
+
+    // ifs.close();
     string line;
-    getline(ifs,line);
-    while (!ifs.eof()) {  
-        /* Parse each line into (double, double, double) where digits = [Age(ma), rO, rC] */
-        string digit;
-        vector<double> digits;    
-        istringstream ss(line);
-        while (getline(ss, digit, ',')) {
-            if(digit != ""){
-                digits.push_back(stod(digit));
+    
+    if (ifs.is_open()) {
+        while (getline(ifs, line)) {
+            string digit;
+            vector<double> digits;    
+            istringstream ss(line);
+            while (getline(ss, digit, ',')) {
+                if(digit != ""){
+                    digits.push_back(stod(digit));
+                }
+            }
+
+            if(digits.size() == numCol){
+                for(size_t cIndex = 0; cIndex < numCol; cIndex++){ 
+                    result[cIndex].push_back(digits[cIndex]);
+                }
             } 
         }
-
-        /* If no NULL data, apped data to result */
-        if(digits.size() == numCol){ 
-            for(size_t cIndex = 0; cIndex < numCol; cIndex++){ 
-                result[cIndex].push_back(digits[cIndex]);
-            }
-        } 
-        getline(ifs,line);
-    }    
-
-    ifs.close();
+        ifs.close();
+    }
     return result;
 }
 
