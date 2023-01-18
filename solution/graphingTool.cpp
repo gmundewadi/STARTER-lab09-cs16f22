@@ -44,7 +44,7 @@ void scatterPlot(
 */
 int main() {
     const size_t NUM_COLUMNS = 3;
-    const size_t WINDOW_SIZE = 5;
+    const size_t WINDOW_SIZE = 15;
     const int MIN_AGE = 53;
     const int MAX_AGE = 57;
 

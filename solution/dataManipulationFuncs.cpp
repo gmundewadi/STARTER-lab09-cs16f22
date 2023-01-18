@@ -162,7 +162,7 @@ vector<vector<double>> filterData(vector<vector<double>>& rawData, int minAge, i
  */
 double getAvgNextNValues(vector<double> const& v, size_t startIndex , size_t windowLength){ 
     double sum = 0; 
-    int stopIndex = max(v.size(), startIndex + windowLength); 
+    int stopIndex = min(v.size(), startIndex + windowLength); 
     for(int i = startIndex; i < stopIndex; i++){ 
         sum += v[i];
     }
