@@ -36,7 +36,7 @@ We request that you DO NOT ask the staff to debug your code for you. They have b
 
 The starter code is in this repo:
 
-* *insert starter code link here*
+* <https://github.com/{{site.github_org}}/STARTER-{{page.num}}>
 
 Previous labs contain instruction for the process of:
 * Adding a `starter` remote for this repo
@@ -174,11 +174,11 @@ When you are finished, you should be able to type ```make``` and then there will
 ![d13C vs Age (ma)](https://user-images.githubusercontent.com/72473351/211673357-4eadc780-77c1-4ac6-8532-6de7fabdd38a.png)
 
 ### 3. d18O Smoothed vs Age (ma)
-![d18O Smoothed vs Age (ma)](https://user-images.githubusercontent.com/72473351/211673561-4e14c653-159e-48c2-8e84-8986e7c03254.png)
-    
+![d18O Smoothed vs Age (ma)](https://user-images.githubusercontent.com/72473351/213101503-61d97314-cc56-4029-be02-3b74e5534d08.png)
+
 
 ### 4. d13C Smoothed vs Age (ma)
-![d18O Smoothed vs Age (ma)](https://user-images.githubusercontent.com/72473351/211673584-53473030-cea2-4c3b-b6af-6b20c981f533.png)
+![d13C Smoothed vs Age (ma)](https://user-images.githubusercontent.com/72473351/213101290-271ce075-9ffa-4736-b114-e35c0aeca306.png)
 
 ### 5. d18O Filtered vs Age (ma)
 ![d18O Filtered vs Age (ma)](https://user-images.githubusercontent.com/72473351/211673609-fea8419e-eb98-4f19-ad09-b8819b88f466.png)
